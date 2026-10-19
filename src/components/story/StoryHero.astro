@@ -34,12 +34,12 @@ const chapters = [
   },
   {
     time: "11:43 pm",
-    title: "One form, sent from a phone",
-    text: "Name, number and what's wrong. It reaches our on-call plumber's phone within seconds, with the address attached.",
+    title: "A call to the emergency line",
+    text: "For an urgent leak, call the emergency line. For planned work, use the quote form and tell us what needs attention.",
   },
   {
     time: "11:48 pm",
-    title: "A van leaves Quarry Hill",
+    title: "A van leaves Collingwood",
     text: "The plumber texts an arrival time of 25 minutes. Common fittings are already on the van, so there's no stop at a supplier.",
   },
   {
@@ -62,7 +62,7 @@ const chapters = [
         <PipeNetwork x={10} y={30} w={380} h={580} cols={5} rows={7} seed={5} />
       </svg>
       <p class="text-sm font-semibold text-muted">
-        {SITE.address.city} and {SITE.serviceAreas.length - 1} nearby towns · Emergency line open 24/7
+        {SITE.address.city} and {SITE.serviceAreas.length - 1} nearby suburbs · Emergency line open 24/7
       </p>
       <h1 id="hero-title" class="h-display mt-5">
         {before}<span class="text-accent-ink">{highlight}</span>{after}

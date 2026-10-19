@@ -1,3 +1,20 @@
+# Copperline — Melbourne demo
+
+Customised Craftline theme for a fictional Melbourne plumbing and heating business.
+
+- Deep teal, cream and mint branding, a new mark, social card and touch icon.
+- A service finder links common household problems to the relevant service pages.
+- Melbourne service areas and Australian copy; the existing CSS house story remains intact.
+- Business contacts, licence, prices and reviews are illustrative. Phone placeholders do not work.
+
+Before using this for a real business, replace the sample details in `src/config.ts`, verify all service claims and reviews, set the production URL, and configure `PUBLIC_FORMGONG_ACCESS_KEY`. Form delivery is not configured in this demo.
+
+Development: `pnpm install`, `pnpm dev`. Validation: `pnpm check` and `pnpm build` (the same scripts are available with npm). Node 22.12+ is required. Set `ASTRO_TELEMETRY_DISABLED=1` in restricted environments.
+
+Brand images can be regenerated from config with `python scripts/brand_assets.py` (requires Pillow).
+
+---
+
 # Craftline
 
 A free Astro theme for local service businesses: plumbers, electricians, cleaners, handymen and contractors.
@@ -8,7 +25,7 @@ A free Astro theme for local service businesses: plumbers, electricians, cleaner
 
 Each button copies the theme to your GitHub, builds it and asks for one value: your Formgong access key (`fk_…`), free at https://formgong.com/new. The form works from the first deploy. Then set `url` in `src/config.ts` to your domain.
 
-The demo business is **Northside Plumbing & Heating**, a fictional plumber in the fictional town of Fernhollow. Everything you see is sample content: phone numbers use the 555-01xx range reserved for fiction, and every email and link uses `example.com`.
+The demo business is **Copperline Plumbing & Heating**, a fictional plumber in Melbourne. Everything you see is sample content: phone numbers are non-working placeholders, and every email and link uses `example.com`.
 
 - **One file to rebrand.** Name, phone, address, service areas, hours, social links, accent color and the form key live in `src/config.ts`.
 - **A home page that tells a story.** The hero picture is the first frame of a scroll story: a leak at 11:40 pm, a form sent from a phone, a van on the way, a fixed price, a dry floor. The house is a real CSS 3D object, seen at a fixed three-quarter angle, with a cutaway front wall where the leak and the repair happen. Everything is driven by CSS (scroll-driven animations). No animation library, no WebGL, no JavaScript.

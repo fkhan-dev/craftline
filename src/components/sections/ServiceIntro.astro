@@ -1,0 +1,45 @@
+---
+import Icon from "../Icon.astro";
+const needs = [
+  { number: "01", title: "Something’s leaking", text: "Find the source. Protect your home. Get a lasting repair.", href: "/services/leak-detection/" },
+  { number: "02", title: "The hot water’s gone", text: "Understand the fault and your repair or replacement options.", href: "/services/water-heaters/" },
+  { number: "03", title: "It’s time for an upgrade", text: "Plan the fittings and finishing touches for a better bathroom.", href: "/services/fixtures-bathrooms/" },
+];
+---
+
+<section class="service-intro section" aria-labelledby="start-title">
+  <div class="container-x">
+    <div class="intro-heading">
+      <p class="eyebrow">Good homes deserve good care</p>
+      <h2 id="start-title">Big disruption.<br />Clear next step.</h2>
+      <p>You don’t need to know the name of the part. Start with what’s happening, and we’ll help you work out the rest.</p>
+    </div>
+    <div class="need-grid">
+      {needs.map((need) => (
+        <a class="need-card" href={need.href}>
+          <span class="need-number">{need.number} /</span>
+          <h3>{need.title}</h3>
+          <p>{need.text}</p>
+          <span class="need-link">Explore the service <Icon name="arrow-right" size={20} /></span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .service-intro { background: #f6f2e8; color: #102f2b; }
+  .intro-heading { max-width: 44rem; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; font-weight: 750; }
+  h2 { margin-top: 1.5rem; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; letter-spacing: -.045em; font-weight: 500; }
+  .intro-heading > p:last-child { margin-top: 1.5rem; max-width: 34rem; color: #486057; line-height: 1.7; }
+  .need-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+  .need-card { border-top: 1px solid #a7b8ac; padding-top: 1.5rem; display: flex; flex-direction: column; align-items: start; }
+  .need-number { font-size: .85rem; color: #486057; font-weight: 650; }
+  h3 { margin-top: 2rem; font-size: 1.6rem; font-weight: 600; letter-spacing: -.025em; }
+  .need-card p { margin-top: .75rem; line-height: 1.65; color: #486057; }
+  .need-link { margin-top: auto; padding-top: 2rem; display: inline-flex; gap: 1rem; align-items: center; font-size: .9rem; font-weight: 750; }
+  .need-card:hover .need-link { text-decoration: underline; text-underline-offset: .3em; }
+  .need-card:focus-visible { outline-color: #102f2b; }
+  @media (max-width: 640px) { .need-grid { grid-template-columns: 1fr; gap: 2.5rem; } h3 { margin-top: 1rem; } }
+</style>

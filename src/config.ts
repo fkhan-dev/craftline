@@ -1,8 +1,7 @@
 /**
  * Craftline — the one file to edit when you rebrand the theme.
  *
- * Everything here is sample data for a fictional business. Phone numbers use the
- * 555-01xx range reserved for fiction, and every email and URL uses example.com.
+ * Everything here is sample data for a fictional business. Phone numbers are deliberately non-working placeholders; email and URL use example.com.
  */
 
 export type Day = "Mo" | "Tu" | "We" | "Th" | "Fr" | "Sa" | "Su";
@@ -17,42 +16,42 @@ export interface OpeningHours {
 }
 
 export const SITE = {
-  name: "Northside Plumbing & Heating",
+  name: "Copperline Plumbing & Heating",
   /** Short name for the logo on small screens. */
-  shortName: "Northside",
-  tagline: "Plumbing and heating repairs, priced before we start",
+  shortName: "Copperline",
+  tagline: "A little less worry. A home that works.",
   description:
-    "Licensed plumbers in Fernhollow for leaks, blocked drains, water heaters and boilers. Written fixed price before any work, two-year guarantee on labor.",
+    "Licensed plumbers in Melbourne for leaks, blocked drains, water heaters and boilers. Written fixed price before any work, two-year guarantee on labour.",
   /** Your production URL. Used for canonical links, Open Graph, the sitemap and the form redirect. */
   url: "https://example.com",
   lang: "en",
-  locale: "en_US",
+  locale: "en_AU",
   /** schema.org type for the JSON-LD block: "Plumber", "Electrician", "HVACBusiness", "HousePainter", "RoofingContractor", "GeneralContractor" or "LocalBusiness". */
   schemaType: "Plumber",
   priceRange: "$$",
 
-  phone: { display: "(555) 555-0142", tel: "+15555550142" },
-  emergencyPhone: { display: "(555) 555-0199", tel: "+15555550199" },
+  phone: { display: "(03) 0000 0000", tel: "+61300000000" },
+  emergencyPhone: { display: "(03) 0000 0001", tel: "+61300000001" },
   email: "hello@example.com",
 
   address: {
-    street: "214 Copperline Road",
-    city: "Fernhollow",
-    region: "OR",
-    postalCode: "97000",
-    country: "US",
+    street: "24 Copperline Lane",
+    city: "Melbourne",
+    region: "VIC",
+    postalCode: "3000",
+    country: "AU",
   },
 
-  /** Towns and neighborhoods you cover. Shown on the home page, in the footer and in JSON-LD. */
+  /** Towns and neighbourhoods you cover. Shown on the home page, in the footer and in JSON-LD. */
   serviceAreas: [
-    "Fernhollow",
-    "North Fernhollow",
-    "Cedar Bluff",
-    "Millbrook Heights",
-    "Ashby Crossing",
-    "Larkspur Valley",
-    "Quarry Hill",
-    "Saltmarsh Point",
+    "Melbourne",
+    "Carlton",
+    "Fitzroy",
+    "Richmond",
+    "Brunswick",
+    "Northcote",
+    "Collingwood",
+    "South Yarra",
   ],
 
   hours: [
@@ -72,7 +71,7 @@ export const SITE = {
 
   /** Trust strip. These are SAMPLE figures — replace them with your real ones. */
   trust: {
-    license: "PL-000000",
+    license: "DEMO-000000",
     years: 25,
     jobs: 12000,
     rating: 4.9,
@@ -81,7 +80,7 @@ export const SITE = {
     /** Call-out fee, shown in the hero and FAQ. */
     callOut: "$129",
     /** Small caption under the strip. Set to "" once the figures are real. */
-    note: "Sample figures for the Craftline demo.",
+    note: "Fictional demo business. Prices, credentials and reviews are illustrative.",
   },
 
   /**
@@ -89,7 +88,7 @@ export const SITE = {
    * `accentText` is the text color on accent fills: keep a contrast ratio of at least 4.5:1
    * (the default dark navy on safety orange is about 7:1).
    */
-  theme: { accent: "#ff7a29", accentText: "#0b0e1c" },
+  theme: { accent: "#a5e4ce", accentText: "#102f2b" },
 
   /**
    * Quote form. PUBLIC_FORMGONG_ACCESS_KEY in .env wins over `accessKey`.

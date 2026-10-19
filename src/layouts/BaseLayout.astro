@@ -17,6 +17,7 @@ const props = Astro.props;
   </head>
   <body class="bg-bg font-sans text-ink antialiased">
     <a href="#main" class="skip-link">Skip to content</a>
+    <div class="demo-notice">Demo website · Fictional business and sample contact details</div>
     <Header />
     <main id="main" tabindex="-1" class="outline-none">
       <slot />
@@ -41,4 +42,8 @@ const props = Astro.props;
   .skip-link:focus-visible {
     transform: none;
   }
+</style>
+
+<style>
+  .demo-notice { background: #f6f2e8; color: #102f2b; text-align: center; padding: .5rem 1rem; font-size: .75rem; letter-spacing: .025em; }
 </style>

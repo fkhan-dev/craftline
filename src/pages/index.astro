@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import StoryHero from "../components/story/StoryHero.astro";
+import ServiceIntro from "../components/sections/ServiceIntro.astro";
 import Stats from "../components/sections/Stats.astro";
 import ServicesGrid from "../components/sections/ServicesGrid.astro";
 import QuotePanel from "../components/sections/QuotePanel.astro";
@@ -13,16 +14,17 @@ import { SITE } from "../config";
 
 <BaseLayout description={SITE.description}>
   <StoryHero
-    title="Plumbing and heating repairs, priced before we start."
-    highlight="priced before we start"
-    lead={`Licensed plumbers, stocked vans and a dispatcher who answers at 3 am. Most repairs are finished on the first visit, and our labor is guaranteed for two years.`}
-    points={[`${SITE.trust.callOut} call-out, taken off the repair`, "Written price before work starts", "2-year guarantee on labor"]}
+    title="A little less worry. A home that works."
+    highlight="A home that works."
+    lead={`From the first drip to the final pressure test, we make the next step clear. Tell us what’s wrong. We’ll explain the fix, agree the price and get your home back to normal.`}
+    points={[`${SITE.trust.callOut} call-out, taken off the repair`, "Written price before work starts", "2-year guarantee on labour"]}
   />
+  <ServiceIntro />
   <Stats />
   <ServicesGrid />
   <QuotePanel
     quote="He came back the next morning to refit the cabinet panel he'd taken off, and didn't charge for the second visit."
-    who="Dana K., Cedar Bluff · sample review"
+    who="Dana K., Fitzroy · sample review"
   />
   <ServiceAreas />
   <Testimonials />

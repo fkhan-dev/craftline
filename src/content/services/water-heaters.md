@@ -1,13 +1,13 @@
 ---
 title: Water heaters
-summary: Repairs, replacements and tankless upgrades for gas and electric water heaters, usually done the same day.
+summary: Repairs, replacements and continuous-flow upgrades for gas and electric water heaters, usually done the same day.
 art: bars
 order: 4
 priceFrom: "$169"
 priceNote: repair, new units priced on site
 duration: Same-day installs
 included:
-  - Tank and tankless, gas and electric
+  - Tank and continuous-flow, gas and electric
   - Sizing advice for your household
   - Old unit removed and recycled
   - Permit and code-compliant venting

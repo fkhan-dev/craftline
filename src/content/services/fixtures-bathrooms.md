@@ -1,6 +1,6 @@
 ---
 title: Fixtures and bathrooms
-summary: Faucets, toilets, showers, sinks and appliance hookups installed neatly, sealed properly and tested before we leave.
+summary: Taps, toilets, showers, sinks and appliance hookups installed neatly, sealed properly and tested before we leave.
 art: drip
 order: 6
 priceFrom: "$99"
@@ -13,11 +13,11 @@ included:
   - Leak test on every joint
 ---
 
-We fit faucets, toilets, showers and sinks, from a single dripping tap to a full bathroom refit. Every joint is leak-tested before we leave, and we tell you how long the silicone needs before the shower can be used.
+We fit taps, toilets, showers and sinks, from a single dripping tap to a full bathroom refit. Every joint is leak-tested before we leave, and we tell you how long the silicone needs before the shower can be used.
 
 ## What we install
 
-- Kitchen and bathroom faucets
+- Kitchen and bathroom taps
 - Toilets, including low-flow and wall-hung
 - Shower valves, mixers and screens
 - Sinks, vanities and garbage disposals
