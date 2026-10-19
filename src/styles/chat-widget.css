@@ -1,0 +1,92 @@
+/* AI Magnet inserts inline styles and exposes data-wm-* hooks, but no theme API.
+   Keep overrides scoped to its panel. !important beats vendor inline colours;
+   do not override display, which the widget uses to open and close the chat. */
+body > section:has(> [data-wm-messages]) {
+  background: var(--c-ink) !important;
+  color: var(--c-bg);
+  color-scheme: light;
+  border-color: var(--c-line) !important;
+  font-family: var(--font-sans) !important;
+  max-height: calc(100dvh - 100px);
+}
+
+body > section:has(> [data-wm-messages]) > header {
+  background: var(--c-bg) !important;
+  color: var(--c-ink) !important;
+  border-color: var(--c-line) !important;
+}
+
+body > section:has(> [data-wm-messages]) > header > div > div > div:last-child {
+  color: var(--c-muted) !important;
+}
+
+[data-wm-messages] {
+  background: var(--c-ink) !important;
+  color: var(--c-bg);
+  min-height: 0;
+}
+
+[data-wm-messages] > div:not([data-wm-status]) {
+  background: #fff !important;
+  color: var(--c-bg) !important;
+  border-color: var(--c-muted) !important;
+  overflow-wrap: anywhere;
+}
+
+[data-wm-messages] [data-wm-status],
+[data-wm-messages] a {
+  color: var(--c-bg) !important;
+}
+
+[data-wm-messages] a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+[data-wm-form] {
+  background: var(--c-ink) !important;
+  color: var(--c-bg);
+  border-color: var(--c-muted) !important;
+}
+
+[data-wm-input] {
+  background: #fff !important;
+  color: var(--c-bg) !important;
+  caret-color: var(--c-bg);
+  border-color: var(--c-line) !important;
+  font-family: var(--font-sans) !important;
+}
+
+[data-wm-input]::placeholder {
+  color: var(--c-line);
+  opacity: 1;
+}
+
+body > section:has(> [data-wm-messages]) + button,
+[data-wm-form] button,
+[data-wm-start-new] {
+  background: var(--accent) !important;
+  color: var(--accent-text) !important;
+  border-color: var(--accent-text) !important;
+  font-family: var(--font-sans) !important;
+  box-shadow: 0 6px 18px rgb(16 47 43 / 18%) !important;
+}
+
+[data-wm-form] button:disabled,
+[data-wm-input]:disabled,
+[data-wm-start-new]:disabled {
+  opacity: 0.65;
+  cursor: wait !important;
+}
+
+[data-wm-form] :focus-visible,
+[data-wm-messages] :focus-visible {
+  outline: 2px solid var(--c-bg);
+  outline-offset: 2px;
+}
+
+[data-wm-start-new]:focus-visible,
+body > section:has(> [data-wm-messages]) + button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
